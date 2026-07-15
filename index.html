@@ -79,7 +79,7 @@ tailwind.config = {
        style="background:radial-gradient(50% 50% at 40% 50%,rgba(20,121,255,.14) 0%,rgba(20,121,255,0) 70%);"></div>
   <div class="relative z-10 max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
     <div class="min-w-0">
-      <p class="eyebrow uppercase text-winblue2 text-xs font-semibold mb-5" data-window>1win × @callie.rounds · Jul 4 – Jul 14, 2026</p>
+      <p class="eyebrow uppercase text-winblue2 text-xs font-semibold mb-5">1win × <a href="https://www.instagram.com/callie.rounds/" target="_blank" rel="noopener" class="hover:underline underline-offset-2 transition">@callie.rounds</a> · Jul 4 – Jul 14, 2026</p>
       <h1 class="font-head font-extrabold leading-[0.95] text-5xl sm:text-6xl md:text-7xl tracking-tight">
         THE FIRST<br><span class="text-winblue">TEN DAYS.</span>
       </h1>
@@ -151,7 +151,7 @@ tailwind.config = {
 <footer class="py-24 md:py-36 border-t border-white/5 text-center">
   <div class="max-w-5xl mx-auto px-6">
     <p class="font-head font-extrabold text-3xl sm:text-4xl md:text-5xl text-white reveal tracking-tight leading-tight">it's been such a great start to this partnership, and i'm so excited to see where it goes from here :)</p>
-    <p class="text-mute mt-8 text-sm eyebrow uppercase reveal">Recap · <span class="text-winblue">1win</span> × <span data-creator-foot>@callie.rounds</span></p>
+    <p class="text-mute mt-8 text-sm eyebrow uppercase reveal">Recap · <span class="text-winblue">1win</span> × <a href="https://www.instagram.com/callie.rounds/" target="_blank" rel="noopener" class="text-winblue hover:underline underline-offset-2 transition">@callie.rounds</a></p>
   </div>
 </footer>
 
@@ -214,9 +214,7 @@ document.getElementById("peekGrid").innerHTML  = RECAP.sneakPeek.map(tileHTML).j
   }
 })();
 
-/* ---- fill copy ---- */
-document.querySelectorAll("[data-window]").forEach(e=>e.textContent="1win × "+RECAP.creator+" · "+RECAP.window);
-document.querySelectorAll("[data-creator-foot]").forEach(e=>e.textContent=RECAP.creator);
+/* ---- (hero eyebrow + footer credit are static, with @callie.rounds linked to IG) ---- */
 
 /* ---- scroll reveal ---- */
 const io = new IntersectionObserver((entries) => {
