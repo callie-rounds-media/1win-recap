@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1win × Callie Rounds — Recap</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0A0B0E',
+        panel: '#101218',
+        winblue: '#1479FF',
+        winblue2: '#4DA3FF',
+        mute: '#8A93A6',
+      },
+      fontFamily: {
+        head: ['Sora', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+      },
+    },
+  },
+};
+</script>
+<style>
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body { background: #0A0B0E; overflow-x: hidden; }
+  section[id] { scroll-margin-top: 72px; }
+  ::selection { background: #1479FF; color: #fff; }
+
+  .eyebrow { letter-spacing: .28em; }
+  .tnum { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+
+  /* Media tiles */
+  .slot { position: relative; overflow: hidden; background:
+      repeating-linear-gradient(45deg,#101218,#101218 12px,#0d0f14 12px,#0d0f14 24px);
+      border: 1px solid rgba(255,255,255,.08); }
+  .slot video, .slot img { width: 100%; height: 100%; object-fit: cover; display:block; }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* Nav active */
+  .navlink { position: relative; }
+  .navlink.active { color: #fff; }
+  .navlink.active::after { width: 100%; }
+  .navlink::after { content:''; position:absolute; left:0; bottom:-4px; height:1px; width:0; background:#1479FF; transition:width .3s ease; }
+
+  @media print { .reveal{opacity:1!important;transform:none!important;} .no-print{display:none;} }
+</style>
+</head>
+<body class="font-body text-white antialiased">
+
+<!-- NAV -->
+<header class="no-print fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-ink/70 border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+    <a href="#hero" class="font-head font-extrabold tracking-tight text-sm">
+      <span class="text-winblue">1win</span> <span class="text-mute font-semibold">× Recap</span>
+    </a>
+    <nav class="hidden md:flex gap-8 text-sm text-mute font-medium">
+      <a href="#numbers" class="navlink hover:text-white transition">The numbers</a>
+      <a href="#content" class="navlink hover:text-white transition">The content</a>
+      <a href="#peek" class="navlink hover:text-white transition">Sneak peek</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
+  <div class="absolute left-0 -top-40 w-[900px] h-[600px] max-w-full pointer-events-none"
+       style="background:radial-gradient(50% 50% at 40% 50%,rgba(20,121,255,.14) 0%,rgba(20,121,255,0) 70%);"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <div class="min-w-0">
+      <p class="eyebrow uppercase text-winblue2 text-xs font-semibold mb-5" data-window>1win × @callie.rounds · Jul 4 – Jul 14, 2026</p>
+      <h1 class="font-head font-extrabold leading-[0.95] text-5xl sm:text-6xl md:text-7xl tracking-tight">
+        THE FIRST<br><span class="text-winblue">TEN DAYS.</span>
+      </h1>
+      <p class="mt-7 text-base md:text-lg text-mute max-w-xl min-w-0 leading-relaxed">
+        Our partnership started on July 4th with the first reel, and I've had so much fun dreaming up concepts for this one. Sunset heli jumps, hot air balloons drifting over the clouds, skydiving off a swing at 5,000 feet. Most of it has been running through Trials, and I know you haven't seen a lot of it yet, so I put this together to share what's gone out and where things are at.
+      </p>
+    </div>
+    <div class="reveal">
+      <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-[4/5] shadow-[0_30px_80px_rgba(0,0,0,.55)]">
+        <img id="heroImg" src="assets/sneak-photo.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" style="object-position:50% 46%;">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/35 to-transparent pointer-events-none"></div>
+      </div>
+    </div>
+  </div>
+  <div class="no-print absolute bottom-8 left-1/2 -translate-x-1/2 text-mute text-xs eyebrow uppercase animate-pulse">Scroll ↓</div>
+</section>
+
+<!-- THE NUMBERS -->
+<section id="numbers" class="py-24 md:py-32 border-y border-white/5 bg-panel/40">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-3 reveal">The numbers so far</p>
+    <h2 class="font-head font-extrabold text-3xl md:text-4xl tracking-tight max-w-2xl reveal mb-12">What the five shoots have done.</h2>
+    <div class="flex flex-wrap gap-x-16 sm:gap-x-24 gap-y-10">
+      <div class="reveal min-w-0">
+        <div class="font-head font-extrabold text-5xl sm:text-6xl md:text-7xl text-winblue tnum"><span class="count" data-to="17.5">0</span>M+</div>
+        <div class="mt-3 font-head font-semibold text-white text-sm">Views so far</div>
+        <div class="mt-1 text-sm text-mute max-w-[15rem]">1win branded content</div>
+      </div>
+      <div class="reveal min-w-0">
+        <div class="font-head font-extrabold text-5xl sm:text-6xl md:text-7xl text-white tnum"><span class="count" data-to="5">0</span></div>
+        <div class="mt-3 font-head font-semibold text-white text-sm">Shoots</div>
+        <div class="mt-1 text-sm text-mute">In the first ten days</div>
+      </div>
+    </div>
+    <p class="mt-10 text-sm text-mute max-w-2xl reveal">Each shoot was cut into several Trial reels, different edits with different audio, so these views are counted across all of them plus the feed posts. Everything is still live.</p>
+  </div>
+</section>
+
+<!-- THE CONTENT -->
+<section id="content" class="py-20 md:py-28 border-y border-white/5 bg-panel/40">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-6 reveal">The content</p>
+    <p class="text-xl md:text-2xl text-white/85 max-w-3xl leading-relaxed reveal">Four finished edits, with one more on the way. Yours to multi-source on any platform, in full quality, linked in the Drive folder below.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14" id="delivGrid"></div>
+
+    <div class="mt-8 flex flex-wrap items-center justify-between gap-5 rounded-2xl border border-white/10 bg-panel p-7 reveal">
+      <div class="text-sm text-mute"><span class="text-white font-semibold">Download the edits.</span> Full-resolution files.</div>
+      <a id="dlBtn" href="#" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl font-head font-semibold text-sm text-mute border border-dashed border-white/15 bg-white/5 pointer-events-none transition">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        <span id="dlLabel">Drive link · adding shortly</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SNEAK PEEK -->
+<section id="peek" class="py-20 md:py-28">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">Raw &amp; unedited</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight max-w-4xl mx-auto reveal">A sneak peek from yesterday's sunrise.</h2>
+
+    <div class="grid grid-cols-2 gap-6 md:gap-8 mt-14 max-w-2xl mx-auto" id="peekGrid"></div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<footer class="py-24 md:py-36 border-t border-white/5 text-center">
+  <div class="max-w-5xl mx-auto px-6">
+    <p class="font-head font-extrabold text-3xl sm:text-4xl md:text-5xl text-white reveal tracking-tight leading-tight">This is just the beginning. I've had so much fun making these, and I've got so many more ideas I want to bring to life with 1win.</p>
+    <p class="text-mute mt-8 text-sm eyebrow uppercase reveal">Recap · <span class="text-winblue">1win</span> × <span data-creator-foot>@callie.rounds</span></p>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   1WIN RECAP — config. Drop media in assets/, update here.
+   ============================================================ */
+const RECAP = {
+  creator: "@callie.rounds",
+  window:  "Jul 4 – Jul 14, 2026",
+  driveUrl: "https://drive.google.com/drive/folders/1cP4upcnEMuhsQq4zbluOejsTsX2L6WPv?usp=share_link",
+
+  edits: [
+    { title: "Edit 01", media: "shoot-01.mp4" },
+    { title: "Edit 02", media: "shoot-02.mp4" },
+    { title: "Edit 03", media: "shoot-04.mp4" },
+    { title: "Edit 04", media: "shoot-03.mp4" },
+  ],
+
+  // Raw sneak peek: two clips from yesterday's sunrise.
+  sneakPeek: [
+    { media: "sneak-01.mp4" },
+    { media: "sneak-02.mp4" },
+  ],
+};
+
+/* ---- tile renderer (click to play, audio on, no overlay text) ---- */
+function tileHTML(item){
+  let media = "";
+  if (item.media) {
+    const isVid = /\.(mp4|mov|webm)$/i.test(item.media);
+    if (isVid) {
+      const poster = item.media.replace(/\.(mp4|mov|webm)$/i, ".jpg");
+      media = `<video src="assets/${item.media}" poster="assets/${poster}" controls playsinline preload="metadata"></video>`;
+    } else {
+      media = `<img src="assets/${item.media}" alt="">`;
+    }
+  }
+  const foot = item.title
+    ? `<div class="mt-3 font-head font-semibold text-sm text-white/90">${item.title}</div>`
+    : "";
+  return `
+    <div class="reveal">
+      <div class="slot aspect-[9/16] rounded-2xl">${media}</div>
+      ${foot}
+    </div>`;
+}
+document.getElementById("delivGrid").innerHTML = RECAP.edits.map(tileHTML).join("");
+document.getElementById("peekGrid").innerHTML  = RECAP.sneakPeek.map(tileHTML).join("");
+
+/* ---- drive button ---- */
+(function driveBtn(){
+  const btn = document.getElementById("dlBtn");
+  const lbl = document.getElementById("dlLabel");
+  if (RECAP.driveUrl) {
+    btn.href = RECAP.driveUrl;
+    btn.classList.remove("pointer-events-none","text-mute","border-dashed","border-white/15","bg-white/5");
+    btn.classList.add("text-white","bg-winblue","border","border-winblue","hover:-translate-y-0.5");
+    lbl.textContent = "Open the Drive folder";
+  }
+})();
+
+/* ---- fill copy ---- */
+document.querySelectorAll("[data-window]").forEach(e=>e.textContent="1win × "+RECAP.creator+" · "+RECAP.window);
+document.querySelectorAll("[data-creator-foot]").forEach(e=>e.textContent=RECAP.creator);
+
+/* ---- scroll reveal ---- */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+const revealAll = () => document.querySelectorAll('.reveal').forEach(el => {
+  const r = el.getBoundingClientRect();
+  if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('in'); else io.observe(el);
+});
+revealAll();
+window.addEventListener('load', revealAll);
+
+/* ---- gentle count-up ---- */
+const countIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target, to = +el.dataset.to; let start = null;
+    const dec = to % 1 !== 0; const dur = 1200;
+    const step = (t) => {
+      if (!start) start = t;
+      const p = Math.min((t - start) / dur, 1);
+      el.textContent = dec ? (p * to).toFixed(1) : Math.floor(p * to).toString();
+      if (p < 1) requestAnimationFrame(step); else el.textContent = dec ? to.toFixed(1) : to;
+    };
+    requestAnimationFrame(step);
+    countIO.unobserve(el);
+  });
+}, { threshold: 0.6 });
+document.querySelectorAll('.count').forEach(el => countIO.observe(el));
+
+/* ---- hero image adjuster (open index.html?adjust to use) ---- */
+(function(){
+  var img = document.getElementById('heroImg');
+  if(!img) return;
+  // apply any previously chosen framing
+  try {
+    var s = JSON.parse(localStorage.getItem('heroAdj')||'null');
+    if(s){ img.style.objectPosition = s.x+'% '+s.y+'%'; img.style.transform = 'scale('+(s.z/100)+')'; }
+  } catch(e){}
+  if(location.search.indexOf('adjust') < 0) return;
+
+  var panel = document.createElement('div');
+  panel.className = 'no-print';
+  panel.style.cssText = 'position:fixed;bottom:18px;right:18px;z-index:300;background:#14171c;border:1px solid #2a2f37;border-radius:14px;padding:16px 18px;width:250px;font-family:Inter,sans-serif;color:#e9ebef;box-shadow:0 16px 50px rgba(0,0,0,.6)';
+  function cur(k,d){ try{var s=JSON.parse(localStorage.getItem('heroAdj')||'null'); return s&&s[k]!=null?s[k]:d;}catch(e){return d;} }
+  panel.innerHTML =
+    '<div style="font-family:Sora;font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4DA3FF;margin-bottom:12px">Hero image framing</div>'+
+    '<label style="display:block;font-size:11px;color:#8B9096;margin-bottom:12px">Left / right<input id="adjX" type="range" min="0" max="100" value="'+cur('x',70)+'" style="width:100%;accent-color:#1479FF"></label>'+
+    '<label style="display:block;font-size:11px;color:#8B9096;margin-bottom:12px">Up / down<input id="adjY" type="range" min="0" max="100" value="'+cur('y',42)+'" style="width:100%;accent-color:#1479FF"></label>'+
+    '<label style="display:block;font-size:11px;color:#8B9096;margin-bottom:12px">Zoom<input id="adjZ" type="range" min="100" max="220" value="'+cur('z',100)+'" style="width:100%;accent-color:#1479FF"></label>'+
+    '<div id="adjOut" style="font:11px/1.5 monospace;color:#8B9096;margin-top:6px;word-break:break-all"></div>';
+  document.body.appendChild(panel);
+  var x=panel.querySelector('#adjX'), y=panel.querySelector('#adjY'), z=panel.querySelector('#adjZ'), out=panel.querySelector('#adjOut');
+  function apply(){
+    img.style.objectPosition = x.value+'% '+y.value+'%';
+    img.style.transform = 'scale('+(z.value/100)+')';
+    out.textContent = 'object-position: '+x.value+'% '+y.value+'%\nscale: '+(z.value/100);
+    localStorage.setItem('heroAdj', JSON.stringify({x:x.value,y:y.value,z:z.value}));
+  }
+  [x,y,z].forEach(function(el){ el.addEventListener('input', apply); });
+  apply();
+})();
+
+/* ---- active nav ---- */
+const links = [...document.querySelectorAll('.navlink')];
+const map = links.map(l => ({ l, sec: document.querySelector(l.getAttribute('href')) })).filter(x => x.sec);
+const navIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const m = map.find(x => x.sec === e.target);
+      if (m) m.l.classList.add('active');
+    }
+  });
+}, { threshold: 0.5 });
+map.forEach(x => navIO.observe(x.sec));
+</script>
+</body>
+</html>
